@@ -66,3 +66,19 @@ var tresPuertas = automoviles.filter(function(item){
     return item.numeroPuertas == 3;
 })
 console.log(tresPuertas);
+
+console.log("--------------------------------------------------------------------")
+
+var cambioPuertas = automoviles.map(function(item,index,array){
+    if (item.numeroPuertas==3){
+        item.numeroPuertas=4;
+        return item;
+    }
+    return item;
+})
+var cuatroPuertas = automoviles.filter(function(item){
+    return item.numeroPuertas == 4;
+})
+console.log(cuatroPuertas);
+console.log("--------------------------------------------------------------------")
+// console.log(cambioPuertas)
